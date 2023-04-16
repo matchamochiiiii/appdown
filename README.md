@@ -5,7 +5,7 @@ tkinter
 youtube_dl
 
 Vào đường dẫn cài đặt python
-Example: C:/User/python3/site-packages/youtube_dl/extractor/youtube.py
+Example: Home/.local/lib/python3/site-packages/youtube_dl/extractor/youtube.py
 
 Chỉnh sửa từ
 Before:
