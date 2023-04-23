@@ -6,7 +6,7 @@ from tkinter import messagebox
 import time
 
 window = tk.Tk()
-window.geometry('620x180')
+window.geometry('620x170')
 window.title('Download App')
 window.resizable(False, False)
 
@@ -48,12 +48,11 @@ def GUI():
     txtLocation = Entry(frame_bottom, textvariable=location, state=DISABLED,disabledbackground='#FFFFFF')
     txtLocation.pack(fill=BOTH, expand=True,padx=5, pady=5)
 
-    btnLocation = Button(frame_end, text = 'Browser',relief=RAISED,bg='#B3E6E8',
+    btnLocation = Button(frame_end, text = 'Browser',relief=RAISED,bg='#B3E6E8',              
     command=lambda: LocationFunc(location))
     btnLocation.pack(fill=BOTH,padx=5, pady=5)
 
-    btnDownload = Button(
-    frame_end, text = 'Download', width=72, relief=RAISED,bg='#B3E6E8',
+    btnDownload = Button(frame_end, text = 'Download', width=72, relief=RAISED,bg='#B3E6E8',
     command=lambda: DownloadFunc(linkVideo, location,my_hook))
     btnDownload.pack(fill=BOTH,padx=5, pady=5)
 
@@ -61,8 +60,6 @@ def my_hook(d):
     if d['status'] == 'finished':
         messagebox.showinfo("SUCCESSFULLY", "DOWNLOADED AND SAVED IN")
         pd['value'] = 0
-    #txtURL.set("")
-    #txtLocation.set("")
        
     if d['status'] == 'downloading':
         pd['value'] += 20
