@@ -18,7 +18,9 @@ After:
 
 # WINDOWS 
 **Install các thư viện **
-tkinter, youtube_dl
+
+tkinter
+youtube_dl
 
 **Vào đường dẫn cài đặt python**
 Example C:\Users\linh7\AppData\Local\Programs\Python\Python311\Lib\site-packages\youtube_dl\extractor
