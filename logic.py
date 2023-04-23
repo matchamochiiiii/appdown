@@ -4,6 +4,7 @@ from tkinter import  filedialog, messagebox
 
 import youtube_dl
 
+
 def LocationFunc(location):
     down_Directory = filedialog.askdirectory(
     initialdir ='Home', title = 'Save video')
@@ -13,7 +14,7 @@ def DownloadFunc(linkVideo,location, my_hook):
     if linkVideo.get() != '':
         ydl_opts = {
             'outtmpl':f'{location.get()}/%(title)s-%(id)s.%(ext)s',
-            'format': 'bestvideo+bestaudio/best',
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=mp4]/best',
             'progress_hooks': [my_hook],
         }
 
