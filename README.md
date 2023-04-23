@@ -17,8 +17,7 @@ After:
 
 
 # WINDOWS 
-**Install các thư viện **
-
+**Install các thư viện:**
 tkinter
 youtube_dl
 
